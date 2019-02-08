@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>python programming</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header id="nav-link">PYTHON PROGRAMMING</header>
+            <ul id="navUnlist">
+                <li><a id="nav-link" href = "#introduction">Introduction</a></li>
+                <li><a id="nav-link" href = "#dataTypes">Variables and dataTypes</a></li>
+                <li><a id="nav-link" href = "#lists">Lists</a></li>
+                <li><a id="nav-link" href = "#classes">Classes</a></li>
+                <li><a id="nav-link" href = "#functions">Functions</a></li>
+                <li><a id="nav-link" href = "#loops">UserInput and whileLoops</a></li>
+
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>
+                    <h1>Python Introduction</h1>
+                </header>
+                
+                <p>
+                    What is Python?<br>   
+                    Python is a popular programming language. It was created in 1991 by Guido van Rossum.
+                    It is used for:
+                    <ul>
+                        <li>web development (server-side)</li>
+                        <li>software development</li>
+                        <li>mathematics</li>
+                        <li>system scripting</li>
+                    </ul>
+                </p>
+                <p> 
+                    Python Syntax compared to other programming languages<br>
+                    <li>Python was designed to for readability, and has some 
+                        similarities to the English language with influence from mathematics.
+                    </li>
+                    <li>Python uses new lines to complete a command, as opposed to other programming
+                        languages which often use semicolons or parentheses.
+                    </li>
+                </p>
+            </section>
+            <section class="main-section" id="dataTypes">
+                <header>
+                    <h1>Python DataTypes and Variables</h1>
+                </header>
+                    </p>
+                        <h2>DataTypes</h2><br>
+                        the following are the pythin data types:<br>
+                        <ul>
+                        <li>integers</li>
+                        <li>floating point numbers</li>
+                        <li>Strings</li>
+                        <li>Complex numbers</li>
+                        </ul>
+                    <p> 
+                    <p>
+                       <h2>Variables</h2> <br>
+                        In this chapter you’ll learn about
+                        the different kinds of data you can work with in your Python programs<br>
+                        Unlike other programming languages, Python has no command for declaring a 
+                        variable. A variable is created the moment you first assign a value to it.<br>
+                    <code>
+                                message = "Hello Python world!"
+                                print(message)
+                                outPut is: Hello Python world!
+                    </code>
+
+            </section>
+            <section class="main-section" id="lists">
+                <header>
+                    <h1>Python Lists</h1>
+                </header>
+                    <p>
+                        <h4>what is a list?</h4><br>
+                        list is a collection of items in a particular order. 
+                        You can make a list that includes the letters of the alphabet,<br>
+                         the digits from 0–9, or the names of all the people in your family. 
+                    </p>
+                    <p> 
+                        In Python, square brackets ([]) indicate a list, and individual elements <br>
+                        in the list are separated by commas. Here’s a simple example of a list that
+                        contains a few kinds of houses:<br>
+                    <code>
+                        houses = ["bangalow", "hut", "unipot", "flat"]<br>
+                        print(houses)
+
+                        #If you ask Python to print a list, Python returns its
+                         representation of the list, including the square brackets:
+
+                        ['trek', 'cannondale', 'redline', 'specialized'] 
+                    </code>
+                        <br>
+                    </p>
+            </section>
+            <section class="main-section" id="classes">
+                <header>
+                    <h1>Python Classes/Objects</h1>
+                </header>
+                    <p>
+                        Python is an object oriented programming language.Almost everything in Python <br>
+                        is an object, with its properties and methods. A Class is like an object constructor,
+                        or a "blueprint" for creating objects.
+                    <h4>Creating a Class</h4>
+                    To create a class, use the keyword class: forexample:
+                    <code>
+                        class Person():
+                        def __init__(self, name, age):
+                        #these are method attributes.
+                            self.name = name
+                            self.age = age
+                        #these are the class activities
+                        def profile(self):
+                            print("hello welcome to Python dear:" + self.name )
+                            print("you are now:", self.age ,"years dear")
+                        #object instantiation.
+                        student = Person("Nakayiza", 45)
+                        #calling a method in the class Shamm
+                        print(student.profile())
+                    </code>
+                    </p>
+                    <p> 
+                        the __init__() Method
+                        A function that’s part of a class is a method.
+                        Everything you learned about functions applies to methods as well;<br>
+                        The __init__() method is a special method Python runs automatically 
+                        whenever we create a new instance based on the class<br>
+                        The self parameter is required in the method definition, and it must come 
+                        first before the other parameters. It must be included in the definition<br> because 
+                        when Python calls this __init__() method later,  the method call will automatically
+                        pass the self argument. 
+                    </p>
+            </section>
+            <section class="main-section" id="functions">
+                <header>
+                    <h1>Python Functions</h1>
+                    <h4>definition of a function</h4>
+                </header>
+                    <p>
+                        A function is a block of organized, reusable code that is used to perform a <br>
+                        single, related action. Functions provide better modularity for your application<br>
+                         and a high degree of code reusing.
+                    <h4>Syntax</h4>
+                    <code>
+                         def printme( str ):
+                         "This prints a passed string into this function"
+                         print str
+                         return
+                    </code>
+                    </p>
+                    <p>
+                    <h4>Calling a function</h4>
+                        Defining a function only gives it a name, specifies 
+                        the parameters that are to be included in the function and <br>
+                        structures the blocks of code.Once the basic structure of a function is finalized,
+                        you can execute it by calling it from another function or<br> directly from the Python prompt.
+                        Following is the example to call printme() function −
+                    <code>
+                        # Function definition is here
+                        def printme( str ):
+                        "This prints a passed string into this function"
+                        print str
+                        return;
+                        # Now you can call printme function
+                        printme("I'm first call to user defined function!")
+                        printme("Again second call to the same function")
+                    </code>
+                    When the above code is executed, it produces the following result −
+                    <code>
+                        I'm first call to user defined function!
+                        Again second call to the same function
+                    </code>
+                    </p>
+            </section>
+            <section class="main-section" id="loops">
+                <header>
+                    <h1>
+                        Python while Loops and user inputs.
+                        <h4>user inputs</h4>
+                        <h5>how the user input works</h5>
+                    </h1>
+                </header>
+                    <p>
+                        The input() function pauses your program and waits for the user to enter 
+                        some text. Once Python receives the user’s input, it stores it in a variable<br>
+                        to make it convenient for you to work with. For example, the following program
+                        asks the user to enter some text, then displays that message back to the user:
+                    <code>
+                        message = input("enter your name: ") 
+                        print(message)
+                    </code>
+                        The input() function takes one argument: the prompt, or instructions, that we want 
+                        to display to the user so they know what to do. In this example, when Python runs the<br> 
+                        first line, the user sees the prompt Tell me something, and I will repeat it back to you: . 
+                        The program waits while the user enters their response and continues after the user presses enter.<br>
+                        The response is stored in the variable message, then print(message) displays the input back to the user:
+                    <code>
+                        enter your name: Nakayiza Shamim 
+                        Nakayiza Shamim 
+                    </code>
+
+                    </p>
+                    <p>
+                        <h4>while Loops</h4> 
+                        You can use a while loop to count up through a series of numbers. <br>
+                        For example, the following while loop counts from 1 to 5:
+                    <code>
+                        current_number = 1 
+                        while current_number <= 5:    
+                        print(current_number)    
+                        current_number += 1
+                    </code>
+                        In the first line, we start counting from 1 by setting the value of current_number to 1.<br>
+                        The while loop is then set to keep running as long as the value of current_number is less than or equal to 5.<br>
+                        The code inside the loop prints the value of current_number and then adds 1 to that value with current_number += 1.<br>
+                        (The += operator is shorthand for current_number = current_number + 1.) 
+                    <code>
+                        outPut of the code above:
+                        1
+                        2
+                        3
+                        4
+                        5
+                    </code> 
+                    </p>
+            </section>
+            </main>
+    </body>
+</html>
+

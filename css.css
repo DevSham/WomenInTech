@@ -1,0 +1,115 @@
+body {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    overflow-wrap: normal;
+    line-height: 2;
+    background-color:pink;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+#navbar {
+    padding-top: 30px;
+    height: 100%;
+    width: 15%;
+    background-color:#ff00ff;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 0;
+        }
+#navUnlist {
+    list-style-type: none;/*removing list styles on the unordered list*/
+    margin:0;
+    padding:0;
+    text-align: left;
+}
+
+/*displaying a block of anchor*/
+#nav-link {
+    display: block;
+    padding: 6px 8px 6px 16px;
+    padding-top:30px;
+    font-size: 25px;
+    text-decoration: none;
+    color:white;
+    /*border: 1px solid #555;/*adding border to the <a> its like an external border of the list*/
+  }
+li a:hover {
+    background-color: rgb(44, 2, 6);
+    color: white;
+  }
+#main-doc {
+    margin-left: 160px;
+    font-size: 20px;
+   padding: 0px 10px;
+
+}
+header, h1, h2, h4{
+    font-style: oblique;
+    font-size: 20px;
+    color: blue;
+}
+#main-section{
+    padding-top: 90px; 
+    font-style: normal;
+    font-size: 20px;
+}
+  /* start of phone styles */
+ @media only screen and (max-width: 720px) {
+    #navbar {
+        padding-top: 30px;
+        height: 100%;
+        width: 5%;
+        background-color:#00ffc8;
+        text-align: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        z-index: 1;
+            }
+        code {
+            display: block;
+            width: 100%;
+            text-align: right;
+            white-space: pre;
+            position: relative;
+            word-break: normal;
+            overflow-wrap: normal;
+            line-height: 2;
+            background-color:pink;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        #main-section{
+            padding-top: 10px; 
+            font-style: normal;
+            font-size: 5px;
+        }
+        header, h1, h2, h4{
+            font-style: oblique;
+            font-size: 10px;
+            color:blue;
+        }
+        #main-doc {
+            margin-left: 0px;
+            font-size: 20px;
+           padding-left: 50px;
+        
+        }
+} 
+ 
+
