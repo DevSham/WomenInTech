@@ -1,21 +1,21 @@
 body {
     font-size: 15px;
-    text-align: left;
+    text-align:left;
     margin-left: 2cm;
     margin-right: 2cm;
 }
 code {
     display: block;
-    text-align: left;
+    text-align:left;
     white-space: pre;
     position: relative;
     word-break: normal;
     overflow-wrap: normal;
     line-height: 2;
     background-color:pink;
-    padding: 15px;
+    padding: 5px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 #navbar {
     padding-top: 30px;
@@ -33,7 +33,7 @@ code {
     list-style-type: none;/*removing list styles on the unordered list*/
     margin:0;
     padding:0;
-    text-align: left;
+    text-align:left;
 }
 
 /*displaying a block of anchor*/
@@ -63,6 +63,7 @@ header, h1, h2, h4{
 }
 #main-section{
     padding-top: 90px; 
+    padding-bottom: 40cm;
     font-style: normal;
     font-size: 20px;
 }
@@ -71,7 +72,7 @@ header, h1, h2, h4{
     #navbar {
         padding-top: 30px;
         height: 100%;
-        width: 5%;
+        width: 20%;
         background-color:#00ffc8;
         text-align: left;
         position: fixed;
@@ -90,14 +91,15 @@ header, h1, h2, h4{
             overflow-wrap: normal;
             line-height: 2;
             background-color:pink;
-            padding: 10px;
-            margin: 10px;
+            padding: 0;
+            margin: 0;
             border-radius: 5px;
         }
         #main-section{
             padding-top: 10px; 
             font-style: normal;
             font-size: 5px;
+            margin-left: 20cm;
         }
         header, h1, h2, h4{
             font-style: oblique;
